@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI时代产品开发全流程 · 敏捷团队的产品开发方法论</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="app">
+
+    <header class="app-header">
+      <div class="brand">
+        <div class="brand-mark">B</div>
+        <div class="brand-text">
+          AI时代产品开发全流程
+          <small>敏捷团队的产品开发方法论</small>
+        </div>
+      </div>
+      <div class="header-actions">
+        <a class="header-btn" href="https://github.com/bmad-code-org/BMAD-METHOD" target="_blank">GitHub ↗</a>
+        <button class="header-btn primary" id="chat-toggle">✦ 问 AI</button>
+      </div>
+    </header>
+
+    <aside class="sidebar" id="sidebar"></aside>
+
+    <main class="main" id="main"></main>
+
+    <aside class="chat-panel" id="chat-panel">
+      <div class="chat-header">
+        <div class="chat-header-title">
+          <span class="live-dot offline" id="chat-status-dot"></span>
+          <span id="chat-status-text">检查连接中…</span>
+        </div>
+        <div class="chat-header-actions">
+          <button class="chat-icon-btn" id="chat-settings" title="配置 AI 模型">⚙</button>
+          <button class="chat-icon-btn" id="chat-clear" title="清空对话">⟲</button>
+          <button class="chat-icon-btn" id="chat-close" title="关闭">✕</button>
+        </div>
+      </div>
+      <div class="settings-view" id="settings-view"></div>
+      <div class="chat-context-bar" id="chat-context-bar"></div>
+      <div class="chat-messages" id="chat-messages"></div>
+      <div class="chat-input-area">
+        <div class="chat-input-wrap">
+          <textarea class="chat-input" id="chat-input" rows="1" placeholder="问 AI 任何关于 BMAD 或你项目的问题…"></textarea>
+          <button class="chat-send" id="chat-send" title="发送">↑</button>
+        </div>
+        <div class="chat-input-hint">Enter 发送 · Shift+Enter 换行</div>
+      </div>
+    </aside>
+
+  </div>
+
+  <script src="/data.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
